@@ -4,7 +4,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class MyFirstClass {
-    public void myFirstClass() {
+    public void test() {
         System.out.println("This is from MyFirstClass");
     }
 }
