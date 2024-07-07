@@ -18,13 +18,15 @@ public class MyFirstController {
 
     @GetMapping("myFirstGetMethodWithBean")
     public void myFirstGetMethodWithBean() {
-        ApplicationContext context = ApplicationContextProvider.getContext();
+        var context = ApplicationContextProvider.getContext();
         var myFirstClass = context.getBean("myFirstClass", MyFirstClass.class);
+        System.out.println("myFirstGetMethodWithBean-->");
         myFirstClass.test();
     }
 
     @GetMapping("myFirstGetMethodWithoutBean")
     public void myFirstGetMethodWithoutBean() {
+        System.out.println("myFirstGetMethodWithoutBean-->");
         myFirstClass.test();
     }
 }
